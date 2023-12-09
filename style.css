@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--dark-background-color);
+    --dark-background-color: #1f2937;
+    --light-color: #f9faf8;
+    --darker-color: #e5e7eb;
+    --call-to-action-color: #3882f6;
+}
+img{
+    height: 100%;
+}
+
+
+/* header stuff */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background-color: var(--dark-background-color);
+    color: var(--light-color);
+    height: 60px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    list-style: none ;
+    color: var(--darker-color);
+}
+
+#logo-container {
+    height: 60px;
+}
+
+#logo {
+    height: 100%;
+}
+
+.img-container  {
+    height: 230px;
+}
+
+/* home stuff */
+
+#home {
+    color: var(--light-color);
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+    margin: auto;
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+}
+
+.main-text {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.secondary-text {
+    color: var(--darker-color);
+    font-size: 18px;
+}
+
+.dog-cat {
+    height: 85%;
+    width: 100vw;
+    text-align: center;
+}
+
+.home-button {
+    width: 95px;
+    height: 30px;
+    color: var(--light-color);
+    background-color: var(--call-to-action-color);
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+}
