@@ -19,7 +19,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1050px;
+    width: 80vw;
+    max-width: 1090px;
     margin: auto;
     background-color: var(--dark-background-color);
     color: var(--light-color);
@@ -55,7 +56,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1000px;
+    max-width: 1050px;
     min-width: 800px;
     margin: auto;
 }
@@ -158,7 +159,8 @@ figcaption {
 }
 
 .quote-container {
-    width: 70vw;
+    width: 60vw;
+    max-width: 1150px;
     margin: auto;
     text-align: center;
 }
@@ -189,6 +191,7 @@ figcaption {
 .call-container {
     height: 110px;
     width: 70vw;
+    max-width: 1000px;
     margin: auto;
     background-color: var(--call-to-action-color);
     display: flex;
@@ -207,6 +210,7 @@ figcaption {
     font-size: 25px;
     font-weight: bold;
 }
+
 
 .call-section-button-container {
     display: flex;
