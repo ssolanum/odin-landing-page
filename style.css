@@ -1,10 +1,13 @@
 * {
     margin: 0;
     font-family: Roboto;
+    /* overflow: hidden; */
     --dark-background-color: #1f2937;
     --light-color: #f9faf8;
     --darker-color: #e5e7eb;
     --call-to-action-color: #3882f6;
+    scroll-behavior: smooth;
+
 }
 img{
     height: 100%;
@@ -12,6 +15,7 @@ img{
 
 body {
     background-color: var(--dark-background-color);
+    width: 100%;
 }
 /* header stuff */
 
@@ -19,7 +23,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80vw;
+    width: 80%;
     max-width: 1090px;
     margin: auto;
     background-color: var(--dark-background-color);
@@ -33,6 +37,11 @@ ul {
     gap: 25px;
     list-style: none ;
     color: var(--darker-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 #logo-container {
@@ -57,14 +66,14 @@ ul {
     justify-content: space-between;
     align-items: center;
     max-width: 1050px;
-    min-width: 800px;
     margin: auto;
 }
 
 #text {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 16px;
     height: 100%;
     width: 100%;
 }
@@ -103,7 +112,7 @@ ul {
     justify-content: space-evenly;
     align-items: center;
     height: 500px;
-    width: 100vw;
+    width: 100%;
     background-color: var(--light-color);
     font-size: 36px;
     font-weight: bold;
@@ -147,7 +156,7 @@ figcaption {
 
 .quote-section {
     height: 300px;
-    width: 100vw;
+    width: 100%;
     background-color: var(--darker-color);
     font-size: 36px;
     font-weight: lighter;
@@ -181,9 +190,9 @@ figcaption {
 
 /* call section */
 
-.call-section {
+#call-section {
     height: 250px;
-    width: 100vw;
+    width: 100%;
     background-color: var(--light-color);    
     display: flex;
 }
@@ -239,4 +248,134 @@ footer {
 
 .footer-text {
     margin-top: 43px;
+}
+
+
+/* media queries */
+
+/* for laptop */
+@media screen and (max-width: 1360px) {
+    header {
+        width: 90vw;
+    }
+
+    #home {
+        width: 820px;
+    }
+}
+/* for tablet */
+@media screen and (max-width: 830px) {
+    header {
+        width: 95%;
+        padding-top: 20px;
+    }
+    #home {
+        width: 95%;
+        min-width: none;
+    }
+    .information-image-container {
+        width: 95%;
+    }
+}
+/* smaller than tablet */
+@media screen and (max-width: 682px) {
+    #home {
+        width: 95%;
+    }
+    .dog-cat {
+        max-width: 280px;
+    }
+    .dog-cat-img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .information {
+        height: 600px;
+        justify-content: space-evenly;
+    }
+    .information-image-container {
+        width: 70%;
+        height: 500px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    .information-figure {
+        width: 170px;
+    }
+    .quote-container {
+        width: 95%;
+    }
+    .call-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 558px) {
+    #home {
+        height: 250px;
+    }
+    .dog-cat {
+        width: 0px;
+    }
+    #text {
+        text-align: center;
+        align-items: center;
+    }
+    .quote-container {
+        width: 97%;
+    }
+    .call-container {
+        width: 97%;
+    }
+    .call-section-subtitle {
+        width: 250px;
+    }
+}
+
+/* mobile L */
+@media screen and (max-width: 425px) {
+    header {
+        padding-top: 10px;
+    }
+    .main-text {
+        font-size: 38px;
+    }
+    .information-title {
+        text-align: center;
+        font-size: 30px;
+    }
+    .information-image-container {
+        width: 97%;
+    }
+    .quote {
+        font-size: 25px;
+    }
+    .quote-author {
+        font-size: 20px;
+    }
+}
+
+/* mobile M */
+@media screen and (max-width: 403px) and (min-width: 320px){
+    header {
+        width: 97%;
+        padding-top: 5px;
+    }
+    .quote-section {
+        height: 230px;
+    }
+    .call-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .call-text-container {
+        text-align: center;
+    }
+    .call-section-title {
+        font-size: 20px;
+    }
+    .call-section-subtitle {
+        font-size: 15px;
+    }
 }
